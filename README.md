@@ -8,13 +8,19 @@ Il est très fortement inspiré de hillshade.cpp
 Compilation
 ===========
 Testé sur debian wheezy :
+
 ```
 apt-get install libmagick++-dev libgdal-dev libgdal1-dev libgdal1 libmagick++-dev libmagick++5
 ```
 
 ```
-wget 
 g++ -O3 color-shade.cpp -lMagick++  -lgdal -I/usr/include/ImageMagick/ -o color-shade
+```
+
+Pas fan de git ?
+
+```
+wget https://raw.github.com/osm-fr/color-shade/master/color-shade.cpp -O - | g++ -O3 -lMagick++  -lgdal -I/usr/include/ImageMagick/ -o color-shade
 ```
 
 
