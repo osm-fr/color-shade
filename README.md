@@ -10,7 +10,8 @@ Compilation
 Testé sur debian wheezy :
 
 ```
-apt-get install libmagick++-dev libgdal-dev libgdal1-dev libgdal1 libmagick++-dev libmagick++5
+apt-get install libmagick++-dev libgdal-dev libgdal1-dev libgdal1 libmagick++-dev libmagick++5 libx11-dev cimg-dev
+
 ```
 
 ```
@@ -20,6 +21,7 @@ g++ -O3 color-shade.cpp -lMagick++  -lgdal -I/usr/include/ImageMagick/ -o color-
 Pas fan de git ?
 
 ```
+wget https://raw.github.com/osm-fr/color-shade/master/stringtok.h
 wget https://raw.github.com/osm-fr/color-shade/master/color-shade.cpp -O - | g++ -O3 -lMagick++  -lgdal -I/usr/include/ImageMagick/ -o color-shade
 ```
 
